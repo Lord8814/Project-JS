@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu des mots</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+
+    <div class="choixMP">
+        <input type="radio" name="choix" id="mots" value="1" checked>
+        <label for="mot">Mots</label>
+        <input type="radio" name="choix" id="phrases" value="2">
+        <label for="phrase">Phrase</label>
+    </div>
+
+
+    <div id="zoneTape">
+        <input type="text" name="motTape" id="champText" placeholder="Entrer le mot">
+    </div>
+
+    <div id="conteneur">
+
+    </div>
+
+
+    <div class="btnValide">
+        <button id="btnValider">Valider</button>
+    </div>
+
+
+    <div class="score">
+        Score : <span id="score">0</span>
+    </div>
+
+    <div class="zoneProposition">
+        Mot à taper : <span id="motPropose">Cachalot</span>
+    </div>
+
+</body>
+
+</html>

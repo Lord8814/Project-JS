@@ -1,0 +1,155 @@
+/* Réinitialisation de certaines marges et paddings pour un rendu uniforme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fond de la page */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+
+/* Conteneur principal */
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+
+/* Titre du jeu */
+
+h1 {
+    font-size: 2em;
+    color: #4e73df;
+    margin-bottom: 20px;
+}
+
+
+/* Section des boutons radio (choix mots/phrases) */
+
+.choixMP {
+    margin-bottom: 20px;
+}
+
+
+/* Style des labels pour les boutons radio */
+
+.choixMP label {
+    font-size: 1.2em;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.choixMP input:checked+label {
+    color: #4e73df;
+}
+
+
+/* Zone de saisie du texte */
+
+#zoneTape {
+    margin-bottom: 20px;
+}
+
+#champText {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #4e73df;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#champText:focus {
+    border-color: #1cc88a;
+}
+
+
+/* Bouton de validation */
+
+.btnValide {
+    margin-bottom: 20px;
+}
+
+#btnValider {
+    background-color: #4e73df;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnValider:hover {
+    background-color: #2e59d9;
+}
+
+
+/* Score */
+
+.score {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #4e73df;
+}
+
+
+/* Zone de proposition */
+
+.zoneProposition {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4e73df;
+}
+
+
+/* Animation pour faire apparaître le score */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#score {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Effets généraux pour les éléments interactifs */
+
+input[type="radio"],
+button {
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #1cc88a;
+    border-color: #1cc88a;
+}
